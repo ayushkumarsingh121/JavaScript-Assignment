@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  let createMultiplicationTable = (n) => {
+    let result = []
+    for(let i=1; i<=n; i++){
+      let arr = []
+      for(let j=1; j<=10; j++){
+        arr.push(j*i)
+      }
+      result.push(arr)
+    }
+    return result
+  }
+  console.log(createMultiplicationTable(20))
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function classifyAnimal(animal) {
+  switch(animal.toLowerCase()) {
+    case 'dog':
+    case 'cat':
+    case 'elephant':
+    case 'cow':
+      console.log("mammal");
+      break;
+    
+    case 'sparrow':
+    case 'eagle':
+    case 'parrot':
+    case 'penguin':
+      console.log("bird");
+      break;
+
+    case 'crocodile':
+    case 'lizard':
+    case 'snake':
+    case 'turtle':
+      console.log("reptile");
+      break;
+
+    case 'frog':
+    case 'toad':
+    case 'salamander':
+      console.log("amphibian");
+      break;
+    
+    case 'shark':
+    case 'salmon':
+    case 'goldfish':
+      console.log("fish");
+      break;
+
+    default:
+      console.log("Unknown animal classification");
+  }
+}
+
+classifyAnimal('dog');       
+classifyAnimal('sparrow');    
+classifyAnimal('crocodile'); 
+classifyAnimal('shark');      
+classifyAnimal('frog');       
+classifyAnimal('dinosaur');   
+
+</script>
+</html>

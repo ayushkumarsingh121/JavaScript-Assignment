@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function complexExpression(a, b, c) {
+      // Calculate the results of various expressions
+      let sum = a + b;
+      let product = a * c;
+      let difference = b - c;
+
+      // Determine which message to return based on the evaluated expressions
+      switch (true) {
+        case sum > 10:
+          return "The sum of a and b is greater than 10.";
+        case product < 20:
+          return "The product of a and c is less than 20.";
+        case difference === 0:
+          return "The difference between b and c is zero.";
+        default:
+          return "No condition was met.";
+      }
+    }
+
+    // Example usage
+    let a = 5;
+    let b = 8;
+    let c = 3;
+
+    console.log(complexExpression(a, b, c)); // Output based on the values of a, b, and c
+  </script>
+</html>

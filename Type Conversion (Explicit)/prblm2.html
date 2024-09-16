@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let convertToString = (value) => {
+      return String(value);
+    };
+    console.log(convertToString(2025));
+    console.log(typeof convertToString(2025));
+
+    console.log(convertToString(true));
+    console.log(typeof convertToString(true));
+
+    let arr = [1, 2, 3, 4, 5];
+    console.log(convertToString(arr));
+    console.log(typeof convertToString(arr));
+
+    let obj = {
+      name: "ayush",
+      skill: "learning JavaScripts",
+    };
+    console.log(convertToString(obj));
+    console.log(typeof convertToString(obj));
+  </script>
+</html>

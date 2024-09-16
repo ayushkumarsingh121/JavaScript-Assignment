@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+ function validatePassword() {
+  let password;
+
+  do {
+    password = prompt("Enter a password (must be longer than 6 characters):");
+    
+    if (password.length <= 6) {
+      console.log("Password too short, please try again.");
+    }
+  } while (password.length <= 6); // Keep prompting until the password is valid
+
+  console.log("Password accepted!");
+}
+
+// Example usage:
+validatePassword();
+
+</script>
+</html>

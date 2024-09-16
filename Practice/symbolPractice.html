@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let obj = {
+    };
+
+    function enterEmotions(name, emotion) {
+      let uniqueName = Symbol(name)
+      obj[uniqueName] = emotion;
+    }
+
+    
+    enterEmotions("Ayush", "Happy");
+    enterEmotions("Ayush", "sad")
+    enterEmotions("Ayush", "Happy")
+    enterEmotions("Ayush", "sad")
+    enterEmotions("Ayush", "Happy")
+  
+    console.log(obj);
+
+    // jaise yaha pr ayush 4 hai agar usko unique nahi banate to kya hota pata hai vah last wala happy wala update ho jata bs 
+
+    let obj2 = {
+    };
+
+    function enterEmotions2(name, emotion) {
+      obj2[name] = emotion;
+    }
+
+    
+    enterEmotions2("Ayush", "Happy");
+    enterEmotions2("Ayush", "sad")
+    enterEmotions2("Ayush", "Happy")
+    enterEmotions2("Ayush", "sad")
+    enterEmotions2("Ayush", "Happy")
+  
+    console.log(obj2);
+
+    // symbol use krne se ham unique bana pate hai bs 
+
+  </script>
+</html>
